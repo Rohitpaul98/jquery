@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<!--CODE BY ROHIT PAUL-->
+<head>
+	<title>EkarmaJquery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$("#bt1").click(function(){
+
+				$(".para").hide(1000,function(){alert("You pressed simple button")});
+			})
+			$("#bt2").click(function(){
+
+				$("#para1").toggle(2000,function(){alert("You pressed hide/show toggle")});
+			})
+			$("#div1").click(function(){
+				$("#div2").toggle(2000);
+			})
+		});
+		
+	</script>
+	<p class="para">CLICK ME,I WILL DISAPPEAR</p>
+	<p id="para1">press hide/show button</p>
+	<div style="background:#fccf03;width: 50%;height:20px" id="div1"><center>CLICK ME!!</center></div>
+	<div id="div2" style="display: none;background:#03fcb5;height: 80px;width: 50%">
+		<p>
+			Hello I am Rohit,I am a web developer today we gonna talk about jquery.
+		</p>
+		<p>
+			Jquery is the framework of javascript,with the policy write less do more.
+			I hope you will like the course.
+		</p>
+	</div>
+	<button id="bt1">Click here now!!</button>
+	 <button id="bt2">Hide/Show</button>
+</body>
+</html>
