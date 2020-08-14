@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.view 
+	{
+    	height: 300px;
+    	width: 400px;
+    	margin: 0 auto;
+	}
+	.view img {
+    	width: 400px;
+    	height: auto;
+	}
+	.view .back {
+    	background: #2184cd;
+    	color: #fff;
+    	text-align: center;
+	}
+	</style>
+	<title>FlippyImage</title>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+</head>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".view").flip({
+				trigger:'hover'
+			});
+		});
+	</script>
+	<div class="view">
+		<div class="front">
+			<img src="loginbackground.jpg" alt="poor connection!!">
+		</div>
+		<div class="back">
+			<h3>Programming is the process of creating a set of instructions that tell a computer how to perform a task. Programming can be done using a variety of computer programming languages, such as JavaScript, Python, and C++.</h3>
+		</div>
+	</div>
+</body>
+</html>
